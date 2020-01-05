@@ -17,3 +17,4 @@ open xcode and run this project
 ~ swiftlint autocorrect
 ```
 
+# THIS APP STILL UNDER DEVELOPMENT, SOME FEATURE MAYBE NOT WORK
