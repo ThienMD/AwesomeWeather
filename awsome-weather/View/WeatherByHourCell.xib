@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherByHourCell" id="gTV-IL-0wX" customClass="WeatherByHourCell" customModule="awsome_weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="197"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHX-Dv-mYC">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="197"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hZs-8D-Trh">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx3-XP-mzT">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002-storm-2" translatesAutoresizingMaskIntoConstraints="NO" id="grp-IM-G2r">
+                                        <rect key="frame" x="0.0" y="40" width="60" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26 °C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGw-6l-374">
+                                        <rect key="frame" x="0.0" y="80" width="60" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="QmA-Tl-9eP"/>
+                                    <constraint firstAttribute="height" constant="120" id="v9Q-SN-3Bk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hZs-8D-Trh" firstAttribute="leading" secondItem="qHX-Dv-mYC" secondAttribute="leading" id="JH3-9R-dsr"/>
+                            <constraint firstItem="hZs-8D-Trh" firstAttribute="top" secondItem="qHX-Dv-mYC" secondAttribute="top" id="vRJ-oT-GDp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qHX-Dv-mYC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="645-fY-cOJ"/>
+                <constraint firstAttribute="bottom" secondItem="qHX-Dv-mYC" secondAttribute="bottom" id="Ddu-BU-hk2"/>
+                <constraint firstItem="qHX-Dv-mYC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FnU-ct-hkj"/>
+                <constraint firstAttribute="trailing" secondItem="qHX-Dv-mYC" secondAttribute="trailing" id="ovl-E4-YIg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="100" height="197"/>
+            <connections>
+                <outlet property="ivWeather" destination="grp-IM-G2r" id="5K7-RG-gXC"/>
+                <outlet property="lblCelcius" destination="WGw-6l-374" id="np7-Xu-b36"/>
+                <outlet property="lblTime" destination="dx3-XP-mzT" id="Vqx-Ts-1gl"/>
+                <outlet property="vContent" destination="qHX-Dv-mYC" id="RHF-88-0az"/>
+            </connections>
+            <point key="canvasLocation" x="-186.95652173913044" y="105.46875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="002-storm-2" width="512" height="512"/>
+    </resources>
+</document>
