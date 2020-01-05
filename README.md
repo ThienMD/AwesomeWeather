@@ -1,6 +1,10 @@
-#  AWSOME WEATHER
+#  AWSOME WEATHER APP
+---
 
-### How to run this app
+# COMPATIBLE
+---
+This app writen by Swift 5
+### Getting Started
 
 ``` 
 ~ pod install
