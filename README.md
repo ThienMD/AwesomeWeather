@@ -1,9 +1,8 @@
 #  AWSOME WEATHER APP
----
 
 # COMPATIBLE
----
-This app writen by Swift 5
+This project is written in Swift 5.0 and requires Xcode 11.0+ to build and run.
+
 ### Getting Started
 
 ``` 
