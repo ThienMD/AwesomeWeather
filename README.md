@@ -1,7 +1,7 @@
 #  AWESOME WEATHER APP
 Awesome Weather App is a swift IOS app. One of the main Purpose of this repo is to show how to apply MVVM, RXSwift, Moya for IOS APP
 
-# COMPATIBLE
+# Compatible
 This project is written in Swift 5.0 and requires Xcode 11.0+ to build and run.
 
 ### Getting Started
