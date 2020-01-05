@@ -1,4 +1,4 @@
-#  AWSOME WEATHER APP
+#  AWESOME WEATHER APP
 
 # COMPATIBLE
 This project is written in Swift 5.0 and requires Xcode 11.0+ to build and run.
